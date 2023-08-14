@@ -1,5 +1,5 @@
 {
-  "name": "tributejsTest",
+  "name": "tributejstest",
   "version": "1.0.0",
   "description": "Native ES6 @mentions",
   "main": "dist/tribute.js",
