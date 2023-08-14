@@ -83,12 +83,12 @@ class TributeEvents {
     let tribute = instance.tribute;
     if (tribute.menu && tribute.menu.contains(event.target)) {
       let li = event.target;
-      event.preventDefault();
-      event.stopPropagation();
+      // event.preventDefault();
+      // event.stopPropagation();
       while (li.nodeName.toLowerCase() !== "li") {
         li = li.parentNode;
         if (!li || li === tribute.menu) {
-          throw new Error("cannot find the <li> container for the click");
+          throw new Error("cannot find the <li> container for the clickTributeEvents.js");
         }
       }
       tribute.selectItemAtIndex(li.getAttribute("data-index"), event);
