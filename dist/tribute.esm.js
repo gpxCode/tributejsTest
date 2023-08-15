@@ -130,6 +130,7 @@ class TributeEvents {
       while (li.nodeName.toLowerCase() !== "li") {
         li = li.parentNode;
         if (!li || li === tribute.menu) {
+
           console.log("cannot find the <li> container for the clicktribute.esm.js");
           return;
           // throw new Error("cannot find the <li> container for the clicktribute.esm.js");
