@@ -126,8 +126,9 @@ class TributeEvents {
     let tribute = instance.tribute;
     if (tribute.menu && tribute.menu.contains(event.target)) {
       let li = event.target;
-      // event.preventDefault();
-      // event.stopPropagation();
+      event?.target?.onclick && event?.target?.onclick();
+      event.preventDefault();
+      event.stopPropagation();
       while (li.nodeName.toLowerCase() !== "li") {
         li = li.parentNode;
         if (!li || li === tribute.menu) {

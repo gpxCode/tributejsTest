@@ -1,6 +1,6 @@
 {
   "name": "tributejstest",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Native ES6 @mentions",
   "main": "dist/tribute.js",
   "module": "dist/tribute.esm.js",
